@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Brew Street</title>
+
+  <!-- ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- خط جميل -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="phone-container">
+<!-- HEADER -->
+
+<header class="header">
+    <img src="images/brew street logo.png" class="logo-img">
+    <div class="menu-text">
+        <h2>MENU</h2>
+        <div class="menu-line"></div>
+    </div>
+
+</header>
+
+<!-- ============================HERO SECTION============================================= -->
+
+<section class="hero">
+
+    <img src="images/background.jpeg" class="hero-img">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h3>Welcome to</h3>
+
+        <h1>BREW STREET</h1>
+
+        <p>
+            Good coffee, good mood.<br>
+            Every single day.
+        </p>
+
+
+    </div>
+
+</section>
+<!-- ================================================== OUR MENU ============================================ -->
+
+
+<section class="menu-section">
+
+  <h2 class="menu-title">Our Menu</h2>
+
+  <!-- categories -->
+<div class="categories-container">
+
+  <button class="arrow-btn left" id="scrollLeft">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="categories">
+
+    <button class="category active" data-filter="hot">
+      <i class="fa-solid fa-fire"></i>
+      Hot Drinks
+    </button>
+
+    <button class="category" data-filter="cold">
+      <i class="fa-solid fa-glass-water"></i>
+      Cold Drinks
+    </button>
+
+    <button class="category" data-filter="frappuccino">
+      <i class="fa-solid fa-blender"></i>
+      Frappuccino
+    </button>
+
+    <button class="category" data-filter="milkshake">
+      <i class="fa-solid fa-ice-cream"></i>
+      Milkshakes
+    </button>
+
+    <button class="category" data-filter="smoothie">
+      <i class="fa-solid fa-lemon"></i>
+      Smoothies
+    </button>
+
+    <button class="category" data-filter="refreshers">
+      <i class="fa-solid fa-droplet"></i>
+      Refreshers
+    </button>
+
+  </div>
+
+  <button class="arrow-btn right" id="scrollRight">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+</div>
+
+  <!--===================================================== menu cards================================= -->
+
+  <div class="menu-grid">
+
+    <!-- CARD 1 -->
+<div class="card" data-category="hot">
+
+      <img src="images/Espresso.jpg">
+
+      <div class="card-content">
+
+        <h3>Espresso </h3>
+
+        <span>$2.50</span>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+   <div class="card" data-category="hot">
+
+      <img src="images/Double Espresso.jpg">
+
+      <div class="card-content">
+
+        <h3>Double Espresso </h3>
+
+        <span>$3.00</span>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Americano.jpg">
+
+      <div class="card-content">
+
+        <h3>Americano</h3>
+
+        <span>$3.50</span>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Cortado.jpg">
+
+      <div class="card-content">
+
+        <h3>Cortado  </h3>
+
+        <span>$1.80</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 6 -->
+
+   <div class="card" data-category="hot">
+
+      <img src="images/Cappuccino.jpg">
+
+      <div class="card-content">
+
+        <h3>Cappuccino </h3>
+
+        <span>$1.50</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 7 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Spanish latte.jpg">
+
+      <div class="card-content">
+
+        <h3>Spanish latte  </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 8 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Matcha_ vanilla  matcha.jpg">
+
+      <div class="card-content">
+
+        <h3>Matcha / vanilla matcha  </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 9 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Mocha.jpg">
+
+      <div class="card-content">
+
+        <h3>Mocha  </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 10 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/White mocha.jpg">
+
+      <div class="card-content">
+
+        <h3>White mocha   </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 11 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Caramel macchiato.jpg">
+
+      <div class="card-content">
+
+        <h3>Caramel macchiato</h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 12 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Hot chocolate.jpg">
+
+      <div class="card-content">
+
+        <h3>Hot chocolate</h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 13 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Nescafé.jpg">
+
+      <div class="card-content">
+
+        <h3>Nescafé</h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 14 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Cappuccino(sachets).jpg">
+
+      <div class="card-content">
+
+        <h3>Cappuccino
+            (sachets)</h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 15 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Black tea.jpg">
+
+      <div class="card-content">
+
+        <h3>Black tea </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+   <!-- CARD 16 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Green tea.jpg">
+
+      <div class="card-content">
+
+        <h3>Green tea </h3>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+<div class="card" data-category="hot">
+
+      <img src="images/Latte.jpeg">
+
+      <div class="card-content">
+
+        <h3>Latte </h3>
+
+        <p>(Vanilla, caramel , irish cream , salted caramel , hazelnut)</p>
+
+        <span>$3.20</span>
+
+      </div>
+
+    </div>
+
+    
+<!-- ======================================================== COLD DRINKS ======================================================= -->
+
+<!-- CARD 2 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced caramel macchiato.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced caramel macchiato</h3>
+
+    <span>$3.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 3 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced mocha.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced mocha </h3>
+
+    <span>$4.20</span>
+
+  </div>
+
+</div>
+<!-- CARD 4 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced white mocha.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced white mocha </h3>
+
+    <span>$3.80</span>
+
+  </div>
+
+</div>
+<!-- CARD 5 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced Spanish latte.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced Spanish latte </h3>
+
+    <span>$4.50</span>
+
+  </div>
+
+</div>
+<!-- CARD 6 -->
+<div class="card" data-category="cold">
+
+  <img src="images/iced Americano.jpg">
+
+  <div class="card-content">
+
+    <h3>iced Americano </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 7 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced chocolate.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced chocolate </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 8 -->
+<div class="card" data-category="cold">
+
+  <img src="images/iced matcha Vanilla.jpg">
+
+  <div class="card-content">
+
+    <h3>iced matcha Vanilla</h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 9 -->
+<div class="card" data-category="cold">
+
+  <img src="images/iced matcha  strawberry.jpg">
+
+  <div class="card-content">
+
+    <h3>iced matcha strawberry</h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 1 -->
+<div class="card" data-category="cold">
+
+  <img src="images/Iced latte.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced latte</h3>
+   <p>(Vanilla, caramel , irish cream , salted caramel , hazelnut)</p>
+    <span>$3.50</span>
+
+  </div>
+
+</div>
+<!-- ======================================================== frappuccino ======================================================= -->
+
+<!-- CARD 2 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Caramel frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Caramel frappe</h3>
+
+    <span>$3.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 3 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Mocha frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Mocha frappe </h3>
+
+    <span>$4.20</span>
+
+  </div>
+
+</div>
+<!-- CARD 4 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Salted caramel frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Salted caramel frappe </h3>
+
+    <span>$3.80</span>
+
+  </div>
+
+</div>
+<!-- CARD 5 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/vanilla frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Vanilla frappe </h3>
+
+    <span>$4.50</span>
+
+  </div>
+
+</div>
+<!-- CARD 6 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Hazelnut frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Hazelnut frappe </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 7 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Irish frappe.jpg">
+
+  <div class="card-content">
+
+    <h3>Irish frappe </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 8 -->
+<div class="card" data-category="frappuccino">
+
+  <img src="images/Matcha Frappuccino.jpg">
+
+  <div class="card-content">
+
+    <h3>Matcha Frappuccino </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+
+<!-- ======================================================== milkshake ======================================================= -->
+
+<!-- CARD 2 -->
+<div class="card" data-category="milkshake">
+
+  <img src="images/Chocolate milkshake.jpg">
+
+  <div class="card-content">
+
+    <h3>Chocolate milkshake </h3>
+
+    <span>$3.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 3 -->
+<div class="card" data-category="milkshake">
+
+  <img src="images/Vanilla milkshake.jpg">
+
+  <div class="card-content">
+
+    <h3>Vanilla milkshake </h3>
+
+    <span>$4.20</span>
+
+  </div>
+
+</div>
+<!-- CARD 4 -->
+<div class="card" data-category="milkshake">
+
+  <img src="images/Strawberry milkshake.jpg">
+
+  <div class="card-content">
+
+    <h3>Strawberry milkshake </h3>
+
+    <span>$3.80</span>
+
+  </div>
+
+</div>
+<!-- CARD 5 -->
+<div class="card" data-category="milkshake">
+
+  <img src="images/caramel milkshake.jpg">
+
+  <div class="card-content">
+
+    <h3>Caramel milkshake </h3>
+
+    <span>$4.50</span>
+
+  </div>
+
+</div>
+<!-- CARD 6 -->
+<div class="card" data-category="milkshake">
+
+  <img src="images/Hazelnut milkshake.jpg">
+
+  <div class="card-content">
+
+    <h3>Hazelnut milkshake </h3>
+
+    <span>$4.00</span>
+
+  </div>
+
+</div>
+<!-- ======================================================== smoothie ======================================================= -->
+
+<!-- CARD 2 -->
+<div class="card" data-category="smoothie">
+
+  <img src="images/Strawberry smoothie.jpg">
+
+  <div class="card-content">
+
+    <h3>Strawberry smoothie </h3>
+
+    <span>$3.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 3 -->
+<div class="card" data-category="smoothie">
+
+  <img src="images/Mango smoothie.jpg">
+
+  <div class="card-content">
+
+    <h3>Mango smoothie </h3>
+
+    <span>$4.20</span>
+
+  </div>
+
+</div>
+<!-- CARD 4 -->
+<div class="card" data-category="smoothie">
+
+  <img src="images/Passion fruit smoothie.jpg">
+
+  <div class="card-content">
+
+    <h3>Passion fruit smoothie </h3>
+
+    <span>$3.80</span>
+
+  </div>
+
+</div>
+<!-- CARD 5 -->
+<div class="card" data-category="smoothie">
+
+  <img src="images/tropical smoothie.jpg">
+
+  <div class="card-content">
+
+    <h3>Tropical smoothie </h3>
+
+    <span>$4.50</span>
+
+  </div>
+
+</div>
+
+<!-- ======================================================== refreshers ======================================================= -->
+
+<!-- CARD 2 -->
+<div class="card" data-category="refreshers">
+
+  <img src="images/Iced tea lemon.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced tea lemon </h3>
+
+    <span>$3.00</span>
+
+  </div>
+
+</div>
+<!-- CARD 3 -->
+<div class="card" data-category="refreshers">
+
+  <img src="images/Iced tea passion.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced tea passion </h3>
+
+    <span>$4.20</span>
+
+  </div>
+
+</div>
+<!-- CARD 4 -->
+<div class="card" data-category="refreshers">
+
+  <img src="images/Iced tea mango.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced tea mango </h3>
+
+    <span>$3.80</span>
+
+  </div>
+
+</div>
+<!-- CARD 5 -->
+<div class="card" data-category="refreshers">
+
+  <img src="images/iced tea Strawberry.jpg">
+
+  <div class="card-content">
+
+    <h3>Iced tea Strawberry</h3>
+
+    <span>$4.50</span>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</section>
+
+
+  <!-- ملف JavaScript -->
+  <script src="script.js"></script>
+
+
+</div>
+</body>
+</html>

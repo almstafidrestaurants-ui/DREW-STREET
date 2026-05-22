@@ -1,0 +1,371 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  background: #dcdcdc;
+
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  min-height: 100vh;
+
+  padding-top: 0;
+
+  margin: 0;
+}
+
+.phone-container{
+
+  width: 390px;
+
+  background: black;
+
+  min-height: 100vh;
+
+  border-radius: 35px;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+
+  margin-top: 10px;
+}
+
+.logo-img{
+  width: 165px;
+  display: block;
+}
+
+.header{
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  padding: 18px;
+
+}
+
+.menu-text{
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+.menu-text h2{
+
+  color: white;
+
+  font-size: 20px;
+
+  letter-spacing: 2px;
+
+  font-weight: 600;
+}
+
+.menu-line{
+
+  width: 70px;
+
+  height: 3px;
+
+background: #8DCD32;
+
+  margin-top: 8px;
+
+  border-radius: 10px;
+}
+/* ===============================================HERO SECTION=================================================== */
+
+/* ================================= HERO SECTION ================================= */
+
+.hero{
+
+  position: relative;
+
+  width: calc(100% - 24px);
+
+  height: 260px;
+
+  margin: 10px auto 0;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+}
+
+.hero-img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 75% 25% ;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay{
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.35);
+}
+
+.hero-content{
+
+  position: relative;
+
+  z-index: 2;
+
+  padding: 60px 20px ;
+
+  color: white;
+}
+
+.hero-content h3{
+
+  font-size: 12px;
+
+  margin-bottom: 9px;
+}
+
+/* العنوان الأخضر */
+
+.hero-content h1{
+
+  font-size: 23px;
+
+  line-height: 0.95;
+
+  color: #8DCD32;
+
+  margin-bottom: 11px;
+}
+
+.hero-content p{
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  margin-bottom: 28px;
+}
+/* ================================= MENU SECTION ================================= */
+
+.menu-section{
+
+  padding: 18px 18px 40px;
+}
+
+.menu-title{
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+/* ================= CATEGORIES ================= */
+.categories-container{
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+}
+
+/* الشريط */
+
+.categories{
+
+  display: flex;
+
+  gap: 3px;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  flex: 1;
+}
+
+.categories::-webkit-scrollbar{
+  display: none;
+}
+
+/* الأزرار */
+
+.category{
+
+  flex-shrink: 0;
+
+  border: none;
+
+  background: #111;
+
+  color: white;
+
+  padding: 8px 12px;
+
+  border-radius: 14px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+.category i{
+
+font-size: 10px;
+}
+.category.active{
+
+  background: #8DCD32;
+
+  color: black;
+
+  font-weight: 600;
+}
+
+/* الأسهم */
+
+.arrow-btn{
+
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: #111;
+
+  color: #8DCD32;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+
+  transition: 0.3s;
+}
+
+.arrow-btn:hover{
+
+  background: #8DCD32;
+
+  color: black;
+}
+/* ================= MENU GRID ================= */
+.menu-grid{
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 16px !important;
+
+
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+  background: #111;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: 0.3s;
+  transform: scale(0.96);
+
+}
+
+.card img{
+
+  width: 100%;
+
+  height: 120px;
+
+  object-fit: cover;
+
+  padding: 3px;
+
+  border-radius: 18px;
+}
+
+.card-content{
+
+  padding: 8px;
+}
+
+.card-content h3{
+
+  color: white;
+
+  font-size: 12px;
+
+  margin-bottom: 6px;
+
+  font-weight: 500;
+}
+
+.card-content p{
+
+  color: #a1a1a1;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+
+.card-content span{
+
+  color: #8DCD32;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
