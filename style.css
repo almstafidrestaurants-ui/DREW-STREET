@@ -6,7 +6,9 @@
 
 body{
 
-  background: #dcdcdc;
+  scroll-behavior: smooth;
+  
+background: black;
 
   font-family: 'Poppins', sans-serif;
 
@@ -25,8 +27,10 @@ body{
 
 .phone-container{
 
-  width: 390px;
+  width: 100%;
 
+   max-width: 390px;
+  
   background: black;
 
   min-height: 100vh;
@@ -37,7 +41,7 @@ body{
 
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
 
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .logo-img{
@@ -110,6 +114,7 @@ background: #8DCD32;
   border-radius: 22px;
 
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .hero-img{
@@ -129,7 +134,7 @@ background: #8DCD32;
 
   inset: 0;
 
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.45);
 }
 
 .hero-content{
@@ -187,19 +192,32 @@ background: #8DCD32;
   font-weight: 600;
 
   margin-bottom: 18px;
+
+    position: relative;
+
+  width: fit-content;
 }
 
+.menu-title::after{
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 60%;
+
+  height: 3px;
+
+  background: #8DCD32;
+
+  border-radius: 10px;
+}
 /* ================= CATEGORIES ================= */
-.categories-container{
 
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
-
-  margin-bottom: 18px;
-}
 
 /* الشريط */
 
@@ -207,21 +225,40 @@ background: #8DCD32;
 
   display: flex;
 
-  gap: 3px;
+  gap: 6px;
 
   overflow-x: auto;
 
   scroll-behavior: smooth;
 
   scrollbar-width: none;
-
+scroll-snap-type: x mandatory;
   flex: 1;
 }
 
 .categories::-webkit-scrollbar{
   display: none;
 }
+.categories-container{
 
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  background: black;
+
+  padding: 10px 0;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
 /* الأزرار */
 
 .category{
@@ -230,7 +267,9 @@ background: #8DCD32;
 
   border: none;
 
-  background: #111;
+ background: rgba(255,255,255,0.05);
+
+backdrop-filter: blur(12px);
 
   color: white;
 
@@ -247,7 +286,7 @@ background: #8DCD32;
   display: flex;
 
   align-items: center;
-
+scroll-snap-align: start;
   gap: 6px;
 }
 .category i{
@@ -261,15 +300,17 @@ font-size: 10px;
   color: black;
 
   font-weight: 600;
+
+  box-shadow: 0 0 15px rgba(141,205,50,0.35);
 }
 
 /* الأسهم */
 
 .arrow-btn{
 
-  width: 34px;
+  width: 30px;
 
-  height: 34px;
+  height: 30px;
 
   border-radius: 50%;
 
@@ -283,13 +324,15 @@ font-size: 10px;
 
   flex-shrink: 0;
 
-  transition: 0.3s;
+ transition: 0.3s ease;
+
+  
 }
 
 .arrow-btn:hover{
 
   background: #8DCD32;
-
+ transform: scale(1.1);
   color: black;
 }
 /* ================= MENU GRID ================= */
@@ -308,35 +351,69 @@ font-size: 10px;
 
 .card{
 
+  display: flex;
+
+  flex-direction: column;
+
+  padding-bottom: 4px;
+
   background: #111;
 
   border-radius: 18px;
 
   overflow: hidden;
 
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.04);
 
-  transition: 0.3s;
-  transform: scale(0.96);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 
+  transition: 0.4s ease;
+
+  opacity: 0;
+
+  animation: fadeIn 0.5s ease forwards;
+}
+.card.show{
+
+  opacity: 1;
+
+  transform: translateY(0);
 }
 
+@keyframes fadeIn{
+
+  from{
+
+    opacity: 0;
+
+    transform: translateY(10px);
+  }
+
+  to{
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
 .card img{
 
   width: 100%;
 
-  height: 120px;
+  height: 95px;
 
   object-fit: cover;
 
   padding: 3px;
 
-  border-radius: 18px;
+  border-radius: 16px;
 }
 
 .card-content{
 
   padding: 8px;
+
+  padding-bottom: 8px;
 }
 
 .card-content h3{
@@ -348,6 +425,10 @@ font-size: 10px;
   margin-bottom: 6px;
 
   font-weight: 500;
+  
+  min-height: 28px;
+
+line-height: 1.3;
 }
 
 .card-content p{
@@ -365,7 +446,22 @@ font-size: 10px;
 
   color: #8DCD32;
 
-  font-size: 16px;
+  font-size: 15px;
 
   font-weight: 600;
+}
+
+.card:hover{
+
+  transform: scale(1);
+
+  border-color: rgba(141,205,50,0.25);
+}
+.card:active{
+
+  border-color: rgba(141,205,50,0.25);
+
+  box-shadow: 0 0 18px rgba(141,205,50,0.08);
+  
+  transform: scale(0.93);
 }
